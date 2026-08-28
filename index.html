@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic personal homepage">
+  <title>张明｜个人主页</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">张明 <span>·</span> Ming Zhang</a>
+    <nav aria-label="主导航">
+      <a href="#about" data-zh="简介" data-en="About">简介</a>
+      <a href="#research" data-zh="研究成果" data-en="Research">研究成果</a>
+      <a href="#students" data-zh="学生" data-en="Students">学生</a>
+      <a href="#join" data-zh="招生" data-en="Join us">招生</a>
+    </nav>
+    <button class="language" id="languageToggle" type="button" aria-label="Switch language">EN</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-zh="计算机科学学院 · 教授" data-en="School of Computer Science · Professor">计算机科学学院 · 教授</p>
+        <h1 data-zh="用计算拓展知识的边界。" data-en="Expanding the frontier of knowledge through computation.">用计算拓展知识的边界。</h1>
+        <p class="intro" data-zh="我在某某大学从事人工智能与数据科学研究，关注可靠、可解释且真正服务于人的智能系统。" data-en="I am a professor at University Name working on artificial intelligence and data science, with a focus on reliable, interpretable systems that serve people.">我在某某大学从事人工智能与数据科学研究，关注可靠、可解释且真正服务于人的智能系统。</p>
+        <div class="actions">
+          <a class="button" href="mailto:your-email@university.edu" data-zh="联系我" data-en="Get in touch">联系我</a>
+          <a class="text-link" href="#research" data-zh="查看研究成果 ↓" data-en="Explore research ↓">查看研究成果 ↓</a>
+        </div>
+      </div>
+      <div class="portrait-wrap">
+        <img id="portrait" src="assets/profile.svg" alt="张明的肖像">
+        <label class="photo-upload" for="photoInput" data-zh="预览我的照片" data-en="Preview my photo">预览我的照片</label>
+        <input id="photoInput" type="file" accept="image/*" hidden>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <p class="section-label" data-zh="01 / 简介" data-en="01 / About">01 / 简介</p>
+      <div class="section-content two-columns">
+        <h2 data-zh="研究、教学与合作。" data-en="Research, teaching, and collaboration.">研究、教学与合作。</h2>
+        <div>
+          <p data-zh="张明是某某大学计算机科学学院教授、博士生导师。加入本校前，曾在某某机构任职。研究成果发表于相关领域的重要期刊和会议。" data-en="Ming Zhang is a professor and doctoral supervisor at the School of Computer Science, University Name. Before joining the university, he worked at Institution Name. His work has appeared in leading journals and conferences.">张明是某某大学计算机科学学院教授、博士生导师。加入本校前，曾在某某机构任职。研究成果发表于相关领域的重要期刊和会议。</p>
+          <p class="facts"><span data-zh="研究方向" data-en="Interests">研究方向</span> · AI · 数据挖掘 · 可信机器学习<br><span data-zh="办公地点" data-en="Office">办公地点</span> · 科研楼 508<br><span data-zh="电子邮箱" data-en="Email">电子邮箱</span> · your-email@university.edu</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section research">
+      <p class="section-label" data-zh="02 / 研究成果" data-en="02 / Research">02 / 研究成果</p>
+      <div class="section-content">
+        <h2 data-zh="论文与专利。" data-en="Publications & patents.">论文与专利。</h2>
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-target="papers" data-zh="代表论文" data-en="Selected papers">代表论文</button>
+          <button class="tab" data-target="patents" data-zh="专利" data-en="Patents">专利</button>
+        </div>
+        <div id="papers" class="record-list tab-panel active">
+          <article><span>2025</span><div><h3>论文题目：可靠智能系统的示例研究</h3><p>张明，李华，王伟 · <em>期刊或会议名称</em></p><a href="#" data-zh="论文链接 ↗" data-en="Paper ↗">论文链接 ↗</a></div></article>
+          <article><span>2024</span><div><h3>A Practical Framework for Trustworthy AI</h3><p>Ming Zhang, Hua Li · <em>Conference / Journal Name</em></p><a href="#">Paper ↗</a></div></article>
+          <article><span>2023</span><div><h3>面向真实场景的可解释学习方法</h3><p>张明，陈晨 · <em>期刊或会议名称</em></p><a href="#" data-zh="论文链接 ↗" data-en="Paper ↗">论文链接 ↗</a></div></article>
+        </div>
+        <div id="patents" class="record-list tab-panel">
+          <article><span>2025</span><div><h3 data-zh="一种面向复杂数据的智能分析方法及系统" data-en="An intelligent analysis method and system for complex data">一种面向复杂数据的智能分析方法及系统</h3><p data-zh="发明专利 · 专利号：CNXXXXXXXXX" data-en="Invention patent · No. CNXXXXXXXXX">发明专利 · 专利号：CNXXXXXXXXX</p></div></article>
+          <article><span>2023</span><div><h3 data-zh="一种可信机器学习模型的训练方法" data-en="A training method for trustworthy machine-learning models">一种可信机器学习模型的训练方法</h3><p data-zh="发明专利 · 专利号：CNXXXXXXXXX" data-en="Invention patent · No. CNXXXXXXXXX">发明专利 · 专利号：CNXXXXXXXXX</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="students" class="section students">
+      <p class="section-label" data-zh="03 / 学生" data-en="03 / Students">03 / 学生</p>
+      <div class="section-content">
+        <h2 data-zh="正在指导的学生。" data-en="Current students.">正在指导的学生。</h2>
+        <div class="student-grid">
+          <article><span class="initial">L</span><h3>李华</h3><p data-zh="博士生 · 2023–至今" data-en="PhD student · 2023–present">博士生 · 2023–至今</p><small data-zh="可信人工智能" data-en="Trustworthy AI">可信人工智能</small></article>
+          <article><span class="initial">W</span><h3>王伟</h3><p data-zh="博士生 · 2024–至今" data-en="PhD student · 2024–present">博士生 · 2024–至今</p><small data-zh="多模态学习" data-en="Multimodal learning">多模态学习</small></article>
+          <article><span class="initial">C</span><h3>陈晨</h3><p data-zh="硕士生 · 2024–至今" data-en="Master's student · 2024–present">硕士生 · 2024–至今</p><small data-zh="数据挖掘" data-en="Data mining">数据挖掘</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="section join">
+      <p class="section-label" data-zh="04 / 加入我们" data-en="04 / Join us">04 / 加入我们</p>
+      <div class="section-content join-content">
+        <div><h2 data-zh="正在招收研究生。" data-en="We are recruiting.">正在招收研究生。</h2><p data-zh="欢迎对人工智能、数据科学和可信机器学习有热情的本科生、硕士生和博士生加入课题组。" data-en="We welcome motivated undergraduate, master's, and doctoral students interested in AI, data science, and trustworthy machine learning.">欢迎对人工智能、数据科学和可信机器学习有热情的本科生、硕士生和博士生加入课题组。</p></div>
+        <div class="join-box"><h3 data-zh="如何申请" data-en="How to apply">如何申请</h3><p data-zh="请将个人简历、成绩单和一段简短的研究兴趣说明发送至邮箱。邮件主题：申请加入课题组 - 姓名。" data-en="Please email your CV, transcript, and a short statement of research interests. Subject: Prospective student – Your name.">请将个人简历、成绩单和一段简短的研究兴趣说明发送至邮箱。邮件主题：申请加入课题组 - 姓名。</p><a class="button" href="mailto:your-email@university.edu" data-zh="发送申请" data-en="Apply by email">发送申请</a></div>
+      </div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> 张明 · Ming Zhang <span> | </span><a href="https://github.com/your-github-username">GitHub</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
